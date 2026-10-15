@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-roboto);
+}
+
+:root {
+  /* Primary Colors */
+  --primary: #d4af37;
+  --primary-hover: #c49e27;
+  --primary-light: #eedfaf;
+
+  /* Background Colors */
+  --background: #f6f8fa;
+  --background-white: #ffffff;
+  --background-muted: #f8f5eb;
+  --more-number:#e0e0e0;
+
+  /* Text Colors */
+  --text-primary: #292929;
+  --text-secondary: #6b6b6b;
+  --text-muted: #888888;
+  --text-white: #ffffff;
+
+  /* Border & Shadow */
+  --border: #eeeeee;
+  --card-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+
+  /* Chart Colors */
+  --chart-primary: #d4af37;
+  --chart-secondary: #eedfaf;
+  --chart-tertiary: #f6efd7;
+    --chart-quaternary: #faf7ec;
+
+  /* Status Colors */
+  --success: #20b99b;
+  --success-bg: #d9fbf4;
+  --danger: #e11d48;
+  --danger-bg: #fdeef0;
+
+  /* Typography */
+  /* Typography */
+--font-primary: var(--font-roboto), Arial, sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+
+
+html {
+  --chart-primary: #d4af37;
+  --chart-secondary: #eedfaf;
+  --chart-tertiary: #f6efd7;
+}
+
+
+/* Hide scrollbar by default */
+.listing-scroll {
+  scrollbar-width: none;
+}
+
+/* Show scrollbar on hover or click/focus */
+.listing-scroll:hover,
+.listing-scroll:focus-within {
+  scrollbar-width: thin;
+  scrollbar-color: #d4af37 transparent;
+}
+
+/* Chrome, Edge, Safari */
+.listing-scroll::-webkit-scrollbar {
+  height: 0px;
+}
+
+.listing-scroll:hover::-webkit-scrollbar,
+.listing-scroll:focus-within::-webkit-scrollbar {
+  height: 6px;
+}
+
+.listing-scroll::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+.listing-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (min-width: 900px) {
+  .listing-scroll,
+  .listing-scroll:hover,
+  .listing-scroll:focus-within {
+    scrollbar-width: none;
+  }
+
+  .listing-scroll::-webkit-scrollbar,
+  .listing-scroll:hover::-webkit-scrollbar,
+  .listing-scroll:focus-within::-webkit-scrollbar {
+    display: none;
+  }
+}
