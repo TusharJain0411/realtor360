@@ -64,7 +64,7 @@ export default function DashboardStats() {
                 />
               </div>
 
-              <h3 className=" font-medium leading-tight text-[var(--text-primary)] min-[800px]:text-[18px] text-[14px] ">
+              <h3 className=" font-medium leading-tight text-[var(--text-primary)] min-[800px]:text-[16px] text-[12px] ">
                 {stat.title}
               </h3>
             </div>

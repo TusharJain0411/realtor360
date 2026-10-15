@@ -44,10 +44,10 @@ const leadsContacts = [
 
 export default function LeadsContacts() {
   return (
-    <div className="flex h-full w-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-6 shadow-[var(--card-shadow)]">
+    <div className="flex h-full w-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-4 shadow-[var(--card-shadow)]">
 
       <div className="mb-4 flex items-center justify-between gap-3">
-        <h2 className="text-[18px] font-semibold text-[var(--text-primary)]">
+        <h2 className="text-[16px] font-semibold text-[var(--text-primary)]">
           Leads Contacts
         </h2>
 
@@ -61,7 +61,7 @@ export default function LeadsContacts() {
       </div>
 
    
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-3">
         {leadsContacts.map((contact) => (
           <div key={contact.id} className="flex min-w-0 items-center gap-3">
     
@@ -77,11 +77,11 @@ export default function LeadsContacts() {
 
       
             <div className="min-w-0 flex-1">
-              <h3 className="truncate text-[14px] font-medium leading-tight text-[var(--text-primary)]">
+              <h3 className="truncate text-[12px] font-medium leading-tight text-[var(--text-primary)]">
                 {contact.name}
               </h3>
 
-              <p className="truncate text-[12px] leading-tight text-[var(--text-secondary)]">
+              <p className="truncate text-[10px] leading-tight text-[var(--text-secondary)]">
                 {contact.location}
               </p>
             </div>

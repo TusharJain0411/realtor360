@@ -99,20 +99,15 @@ export default function Dashboard() {
         </section>
 
         {/* Right Section */}
-
-        {/* Right Section - 25% */}
         <aside
           className={`w-full min-w-0 p-4 min-[900px]:w-[25%] ${
             activeSection === "reminder" ? "block" : "hidden min-[900px]:block"
           }`}
         >
           <div className="flex w-full min-w-0 flex-col gap-4">
-            {/* Reminder - Top */}
             <div className="w-full min-w-0">
               <Reminder />
             </div>
-
-            {/* Calendar Schedule - Below Reminder */}
             <div className="w-full min-w-0">
               <CalendarSchedule />
             </div>

@@ -25,8 +25,8 @@ const leadAvatars = [
 
 export default function Reminder() {
   return (
-    <div className="w-full rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-6 shadow-[var(--card-shadow)]">
-      <h2 className="mb-3 px-1 text-[18px] font-semibold leading-tight text-[var(--text-primary)]">
+    <div className="w-full rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-4 shadow-[var(--card-shadow)]">
+      <h2 className="mb-3 px-1 text-[16px] font-semibold leading-tight text-[var(--text-primary)]">
         Reminder
       </h2>
 

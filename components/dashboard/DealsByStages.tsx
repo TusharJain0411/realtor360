@@ -105,9 +105,9 @@ export default function DealsByStages() {
   }, []);
 
   return (
-    <div className="flex h-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-6 shadow-[var(--card-shadow)]">
+    <div className="flex h-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-4 shadow-[var(--card-shadow)]">
 
-      <h2 className="text-[18px] font-semibold text-[var(--text-primary)]">
+      <h2 className="text-[16px] font-semibold text-[var(--text-primary)]">
         Deals by Stages by Development
       </h2>
 
@@ -221,7 +221,7 @@ export default function DealsByStages() {
                 }}
               />
 
-              <span className="text-[14px] text-[var(--text-secondary)]">
+              <span className="text-[12px] text-[var(--text-secondary)]">
                 {item.name}
               </span>
             </div>

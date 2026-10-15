@@ -63,8 +63,8 @@ const statusStyles: Record<string, string> = {
 
 export default function ActiveListing() {
   return (
-    <div className="flex h-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-6 shadow-[var(--card-shadow)]">
-      <h2 className="mb-4 text-[18px] font-semibold text-[var(--text-primary)]">
+    <div className="flex h-full min-w-0 flex-col rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-4 shadow-[var(--card-shadow)]">
+      <h2 className="mb-4 text-[16px] font-semibold text-[var(--text-primary)]">
         Active Listing
       </h2>
 
@@ -86,7 +86,7 @@ export default function ActiveListing() {
               ].map((heading, index, arr) => (
                 <th
                   key={heading}
-                  className={`px-3 py-3 text-[14px] font-semibold whitespace-nowrap text-[var(--text-primary)] ${
+                  className={`px-2 py-2 text-[14px] font-semibold whitespace-nowrap text-[var(--text-primary)] ${
                     index === 0 ? "rounded-l-lg" : ""
                   } ${index === arr.length - 1 ? "rounded-r-lg" : ""}`}
                 >
@@ -103,7 +103,7 @@ export default function ActiveListing() {
                 className="transition-colors duration-200 hover:bg-[var(--background-muted)]"
               >
                 <td className="px-3 py-2">
-                  <div className="flex min-w-[155px] items-center gap-2">
+                  <div className="flex min-w-[155px] items-center gap-1">
                     <div className="relative h-[40px] w-[40px] shrink-0 overflow-hidden rounded-[10px] bg-[var(--background)]">
                       <Image
                         src={listing.image}
@@ -114,21 +114,21 @@ export default function ActiveListing() {
                       />
                     </div>
 
-                    <span className="max-w-[115px] text-[14px] leading-tight font-medium text-[var(--text-primary)]">
+                    <span className="max-w-[115px] text-[12px] leading-tight font-medium text-[var(--text-primary)]">
                       {listing.property}
                     </span>
                   </div>
                 </td>
 
-                <td className="px-3 py-2 text-[14px] text-[var(--text-secondary)]">
+                <td className="px-3 py-2 text-[12px] text-[var(--text-secondary)]">
                   {listing.type}
                 </td>
 
-                <td className="px-3 py-2 text-[14px] text-[var(--text-secondary)]">
+                <td className="px-3 py-2 text-[12px] text-[var(--text-secondary)]">
                   {listing.units}
                 </td>
 
-                <td className="whitespace-nowrap px-3 py-2 text-[14px] font-medium text-[var(--text-primary)]">
+                <td className="whitespace-nowrap px-3 py-2 text-[12px] font-medium text-[var(--text-primary)]">
                   {listing.price}
                 </td>
 
@@ -157,7 +157,7 @@ export default function ActiveListing() {
                   </div>
                 </td>
 
-                <td className="px-3 py-2 text-[14px] text-[var(--text-secondary)]">
+                <td className="px-3 py-2 text-[12px] text-[var(--text-secondary)]">
                   {listing.views}
                 </td>
 

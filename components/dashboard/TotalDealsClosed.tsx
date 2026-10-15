@@ -9,8 +9,8 @@ export default function TotalDealsClosed() {
   const closedPercentage = total > 0 ? (dealsData.closed / total) * 100 : 0;
 
   return (
-    <div className="w-full min-w-0 rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-6 shadow-[var(--card-shadow)]">
-      <h2 className="mb-4 text-[18px] font-semibold text-[var(--text-primary)]">
+    <div className="w-full min-w-0 rounded-[var(--radius-lg)] bg-[var(--background-white)] px-4 py-4 shadow-[var(--card-shadow)]">
+      <h2 className="mb-4 text-[16px] font-semibold text-[var(--text-primary)]">
         Total Deals Closed
       </h2>
 
@@ -37,7 +37,7 @@ export default function TotalDealsClosed() {
    
       <div className="mt-2 flex items-center justify-between gap-3">
         <div className="flex items-baseline gap-2">
-          <span className="text-[18px] font-semibold leading-none text-[var(--text-primary)]">
+          <span className="text-[16px] font-semibold leading-none text-[var(--text-primary)]">
             {dealsData.closed}
           </span>
 
@@ -47,7 +47,7 @@ export default function TotalDealsClosed() {
         </div>
 
         <div className="flex items-baseline gap-2">
-          <span className="text-[18px] font-semibold leading-none text-[var(--text-primary)]">
+          <span className="text-[16px] font-semibold leading-none text-[var(--text-primary)]">
             {dealsData.inProgress}
           </span>
 

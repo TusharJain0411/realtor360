@@ -163,7 +163,7 @@ export default function Navbar() {
          href="/"
          className="flex shrink-0 items-center gap-1 mr-3  max-[900px]:mr-0"
        >
-         <div className="flex h-[46px] w-[36px] items-center justify-center">
+         <div className="flex h-[44px] w-[34px] items-center justify-center">
            <svg
              xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 1140 1140"
@@ -180,7 +180,7 @@ export default function Navbar() {
 
          <span
            className={`block overflow-hidden whitespace-nowrap
-    text-[22px] font-bold tracking-[-0.8px]
+    text-[20px] font-bold tracking-[-0.8px]
     text-[var(--text-primary)]
     transition-[max-width,opacity,transform] duration-300 ease-in-out
     ${
@@ -206,14 +206,14 @@ export default function Navbar() {
          }`}
        >
          {/* Desktop Navigation Links */}
-         <div className="ml-auto hidden min-w-0 items-center justify-end gap-[1px] overflow-hidden whitespace-nowrap md:flex">
+         <div className="ml-auto hidden min-w-0 items-center justify-center gap-[1px] overflow-hidden whitespace-nowrap md:flex">
            {visibleLinks.map((item) => (
              <Link
                key={item.name}
                href={item.path}
                className={`
-          flex h-[45px] shrink-0 items-center justify-center
-          rounded-[13px] px-[14px] text-[18px]
+          flex h-[45px] shrink-0 items-center justify-end
+          rounded-[13px] px-[14px] text-[16px]
           font-normal transition-colors duration-200
           ${
             pathname === item.path
@@ -254,7 +254,7 @@ export default function Navbar() {
                      href={item.path}
                      role="menuitem"
                      onClick={() => setMoreOpen(false)}
-                     className={`block rounded-md px-4 py-3 text-[18px] transition-colors ${
+                     className={`block rounded-md px-4 py-3 text-[16px] transition-colors ${
                        pathname === item.path
                          ? "bg-[var(--primary)] text-[var(--text-white)]"
                          : "text-[var(--text-primary)] hover:bg-[var(--background-muted)]"
@@ -293,7 +293,7 @@ export default function Navbar() {
            aria-label="Search"
            value={search}
            onChange={(e) => setSearch(e.target.value)}
-           className="w-full min-w-0 bg-transparent text-[16px] text-[var(--text-primary)] outline-none placeholder:text-[var(--text-secondary)]"
+           className="w-full min-w-0 bg-transparent text-[14px] text-[var(--text-primary)] outline-none placeholder:text-[var(--text-secondary)]"
          />
 
          <Search size={18} className="shrink-0 text-[var(--text-secondary)]" />
@@ -336,7 +336,7 @@ export default function Navbar() {
              value={search}
              onChange={(e) => setSearch(e.target.value)}
              tabIndex={mobileSearchOpen ? 0 : -1}
-             className={`min-w-0 bg-transparent text-[16px]
+             className={`min-w-0 bg-transparent text-[14px]
         text-[var(--text-primary)] outline-none
         transition-[width,opacity] duration-300 ease-in-out
         ${
@@ -418,11 +418,11 @@ export default function Navbar() {
                  />
                </div>
 
-               <h3 className="text-[18px] font-semibold text-[var(--text-primary)]">
+               <h3 className="text-[16px] font-semibold text-[var(--text-primary)]">
                  Rick John
                </h3>
 
-               <p className="mt-1 text-[14px] text-[var(--text-secondary)]">
+               <p className="mt-1 text-[12px] text-[var(--text-secondary)]">
                  rick.john@example.com
                </p>
              </div>
@@ -434,7 +434,7 @@ export default function Navbar() {
                  href="/settings"
                  role="menuitem"
                  onClick={() => setProfileOpen(false)}
-                 className="flex w-full justify-center items-center gap-3 rounded-lg px-4 py-3 text-[16px] text-[var(--text-primary)] transition-colors hover:bg-[var(--background-muted)]"
+                 className="flex w-full justify-center items-center gap-3 rounded-lg px-4 py-3 text-[14px] text-[var(--text-primary)] transition-colors hover:bg-[var(--background-muted)]"
                >
                  <Settings size={18} />
                  <span>Settings</span>
@@ -447,7 +447,7 @@ export default function Navbar() {
                    setProfileOpen(false);
                    // Add your logout functionality here.
                  }}
-                 className="flex w-full items-center justify-center gap-3 rounded-lg px-4 py-3 text-[16px] text-[var(--danger)] transition-colors hover:bg-[var(--danger-bg)]"
+                 className="flex w-full items-center justify-center gap-3 rounded-lg px-4 py-3 text-[14px] text-[var(--danger)] transition-colors hover:bg-[var(--danger-bg)]"
                >
                  <LogOut size={18} />
                  <span>Logout</span>

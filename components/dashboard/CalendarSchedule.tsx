@@ -132,16 +132,16 @@ export default function CalendarSchedule() {
         });
 
   return (
-    <div className="flex h-full min-w-0 flex-col overflow-hidden rounded-[var(--radius-lg)] bg-[var(--background-white)] shadow-[var(--card-shadow)] px-4 py-6">
+    <div className="flex h-full min-w-0 flex-col overflow-hidden rounded-[var(--radius-lg)] bg-[var(--background-white)] shadow-[var(--card-shadow)] px-4 py-4 min-[700px]:max-[899px]:flex-row min-[700px]:max-[899px]:gap-4">
+      {" "}
       {/* Calendar */}
-      <div className="pb-8">
-        {/* Month Header */}
+      <div className="min-w-0 pb-3 min-[700px]:max-[899px]:w-1/2 min-[700px]:max-[899px]:flex-1 min-[700px]:max-[899px]:pb-0">
         <div className="flex items-center justify-between gap-3">
-          <h2 className="text-[28px] font-medium text-[var(--text-primary)] max-[900px]:text-[24px]">
+          <h2 className="text-[22px] font-medium text-[var(--text-primary)] max-[900px]:text-[20px]">
             {monthTitle}
           </h2>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <button
               type="button"
               aria-label="Previous month"
@@ -162,8 +162,7 @@ export default function CalendarSchedule() {
           </div>
         </div>
 
-        {/* Weekday Headers */}
-        <div className="mt-8 grid grid-cols-7 gap-y-3">
+        <div className="mt-4 grid grid-cols-7 gap-y-2">
           {weekDays.map((day, index) => (
             <div
               key={index}
@@ -173,7 +172,6 @@ export default function CalendarSchedule() {
             </div>
           ))}
 
-          {/* Calendar Dates */}
           {calendarDays.map((day, index) => {
             if (day === null) {
               return <div key={`empty-${index}`} />;
@@ -207,7 +205,6 @@ export default function CalendarSchedule() {
                   {day}
                 </span>
 
-                {/* Event Indicators */}
                 {dayEvents.length > 0 && (
                   <div className="absolute bottom-0 flex items-center gap-[2px]">
                     {Array.from(
@@ -228,12 +225,10 @@ export default function CalendarSchedule() {
           })}
         </div>
       </div>
-
       {/* Divider */}
-      <div className="border-t border-[var(--border)]" />
-
+      <div className="border-t border-[var(--border)] min-[700px]:max-[899px]:border-t-0 min-[700px]:max-[899px]:border-l" />
       {/* Schedule */}
-      <div className="flex min-h-0 flex-1 flex-col mt-8">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col mt-3 min-[700px]:max-[899px]:mt-0">
         <h3 className="mb-5 text-[20px] font-medium text-[var(--text-primary)]">
           My Schedule
         </h3>
